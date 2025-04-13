@@ -1,19 +1,20 @@
-import './App.css'
-import ItemListContainer from "./components/ItemListContainer";
-import NavBarBootstrap from './components/NavBarBootstrap'
-import NavbarComponent from './components/NavbarComponent'
-import Contador from './ejemplos/Contador'
+import ItemListContainer from './components/ItemListContainer'
+ import NavBarBootstrap from './components/NavBarBootstrap'
+ import NavbarComponent from './components/NavbarComponent'
+ // import Contador from './ejemplos/Contador'
+ import Contador from './ejemplos/Contador'
  function App() {
   const user = {
-   name:'Miguel'
+   name:'Laura'
   }
+ 
  console.log('Soy App')
    return (
      <>
-       {/* <NavbarComponent/> */}
        <NavBarBootstrap/>
-       <ItemListContainer greeting='Bienvenidos' pepe={user}/>
-       <Contador/>
+       {/* <ItemListContainer greeting='Bienvenidos' pepe={user}/> */}
+       <ItemListContainer greeting='Bienvenidos' />
+       {/* <Contador/> */}
      </>
    )
  }
