@@ -24,8 +24,8 @@ import React, { useEffect, useState } from 'react'
  
    return (
      <div>
-         {loading ? <p>Cargando..</p>:<ItemDetail product={product}/>}
-         {loading ? <LoaderComponent/>:<ItemDetail product={product}/>}
+         {/* {loading ? <p>Cargando..</p>:<ItemDetail product={product}/>} */}
+         {loading ? <LoaderComponent/>:<ItemDetail product={product}/>} 
      </div>
    )
  }

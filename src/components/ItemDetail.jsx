@@ -5,9 +5,7 @@
  import { Link } from 'react-router-dom'
  
  const ItemDetail = ({product}) => {
-    //  const onAdd = (quantity) => {
-    //      alert(`Agregaste ${quantity} unidades`)
-    //  }
+    
    const {addToCart} = useContext(CartContext)
    const [purchase, setPurchase] = useState(false)
    
@@ -17,16 +15,14 @@
    }
  
    return (
-     <div>
-         <h1>Detalle del producto : {product.name}</h1>
-         <img src={product.img}  alt={product.name}/>
-         <p>{product.description}</p>
-         <p>Stock: {product.stock} unidades</p>
-         <p>Precio: ${product.price},00</p>
-         <ItemCounter stock={product.stock} onAdd={onAdd}/>
-         {purchase ? <Link className='btn btn-dark' to='/cart'>Ir al carrito</Link> : <ItemCounter stock={product.stock} onAdd={onAdd}/>}
-     </div>
-   )
- }
- 
+    <div>
+      <h1>Detalle del producto : {product.name}</h1>
+      <img src={product.img} alt={product.name}/>
+      <p>{product.description}</p>
+      <p>Stock: {product.stock} unidades</p>
+      <p>Precio: ${product.price},00</p>
+      {purchase ? <Link className='btn btn-dark' to='/cart'>Ir al carrito</Link> : <ItemCounter stock={product.stock} onAdd={onAdd}/>}
+    </div>
+  )
+}
  export default ItemDetail
