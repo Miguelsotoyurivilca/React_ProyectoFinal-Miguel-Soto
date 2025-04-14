@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
  import { getOneProduct, getProducts } from '../mock/asyncData'
  import ItemDetail from './ItemDetail'
  import { useParams } from 'react-router-dom'
+ import LoaderComponent from './LoaderComponent'
  
  const ItemDetailContainer = () => {
      const [product, setProduct] = useState({})
@@ -19,29 +20,12 @@ import React, { useEffect, useState } from 'react'
      },[])
  
  
- //si tengo los ids tipo number
-     // useEffect(()=>{
-     //     setLoading(true)
-     //     getProducts()
-     //     .then((res)=> setProduct(res.find((item)=> item.id === Number(id))))
-     //     .catch((error)=> console.log(error))
-     //     .finally(()=> setLoading(false))
-     // },[])
- 
-     //crear una funcion que busque un item en particular
- 
-     // useEffect(()=>{
-     //     setLoading(true)
-     //     getOneProduct(id)
-     //     .then((res=> setProduct(res)))
-     //     .catch((error)=> console.log(error))
-     //     .finally(()=> setLoading(false))
-     // },[])
  
  
    return (
      <div>
          {loading ? <p>Cargando..</p>:<ItemDetail product={product}/>}
+         {loading ? <LoaderComponent/>:<ItemDetail product={product}/>}
      </div>
    )
  }
