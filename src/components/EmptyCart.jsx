@@ -4,8 +4,8 @@ import React from 'react'
  const EmptyCart = () => {
    return (
      <div>
-         <h1>Tu carrito esta vacio 😱</h1>
-         <h3>Te invitamos  a home para ver mas productos</h3>
+         <h1>Tu carrito esta vacio</h1>
+         <h4>Te invitamos  a home para ver mas productos</h4>
          <Link to ='/' className='btn btn-dark'>Ir a home</Link>
      </div>
    )

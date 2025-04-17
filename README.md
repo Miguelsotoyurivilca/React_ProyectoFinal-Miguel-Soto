@@ -19,7 +19,7 @@
  
  ### Version HOST 💻
  
- Si desea ver el proyecto onlica, puede ingresar al siguiente link: [Coder Flex App]()
+ Si desea ver el proyecto onlica, puede ingresar al siguiente link: [Coder Flex App](https://react-proyecto-final-miguel-soto.vercel.app/cart)
  
  ### Librerias Utilizadas 📖
  
