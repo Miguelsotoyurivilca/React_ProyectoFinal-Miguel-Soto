@@ -28,8 +28,10 @@ import Container from 'react-bootstrap/Container';
            </Nav>
              {/* <CartWidgetIcons/> */}
            {/* Una forma de hacerlo */}
-            {/* { cart.length && <NavLink to='/cart' style={{textDecoration:'none'}}><CartWidgetIcons/></NavLink>} */}
-           <NavLink to='/cart' style={{textDecoration:'none'}}><CartWidgetIcons/></NavLink> 
+           
+           <NavLink to='/cart' style={{textDecoration:'none'}}>
+           {/* {cartQuantity() > 0 && <span>{cartQuantity()}</span>} */}
+           <CartWidgetIcons/></NavLink> 
          </Navbar.Collapse>
        </Container>
      </Navbar>

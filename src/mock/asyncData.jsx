@@ -7,7 +7,7 @@ export const productos = [
         description: 'cafe tipo 2',
         stock:50,
         category:'ofertas',
-        img:'https://picsum.photos/200'
+        img:'../cafe2.jpg'
     },
     {
         
@@ -16,7 +16,7 @@ export const productos = [
         description: 'cafe tipo 3',
         stock:20,
         category:'mas vendidos',
-        img:'https://picsum.photos/206'
+        img:'../cafe3.jpg'
     },
     {
        
@@ -25,7 +25,7 @@ export const productos = [
         description: 'cafe tipo 4',
         stock:30,
         category:'ofertas',
-        img:'https://picsum.photos/204'
+        img:'../cafe4.jpg'
     }
 ]
 
